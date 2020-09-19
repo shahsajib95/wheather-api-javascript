@@ -7,6 +7,7 @@ function demo(){
         document.querySelector('.lead').innerHTML = data.weather[0].main;
         const icon = data.weather[0].icon;
         document.getElementById('icon').src = `https://openweathermap.org/img/wn/${icon}@2x.png`;
+        console.log(data)
     })
 }
 demo();
